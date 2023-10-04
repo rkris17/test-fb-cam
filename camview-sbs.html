@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta id="theme-color" name="theme-color" content="#fff">
+
+
+<base target="_blank">
+
+
+
+
+<link rel="stylesheet" href="../../css/main.css">
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video-elem {
+  width : 100% ;
+}
+h1 {
+  margin: 0 0 24px 0;
+}
+select {
+  width: 150px;
+}
+video {
+  margin: 10px 0 0 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+
+  <div class="eyeL">
+
+  <div class="select">
+    <label for="audioSource1">Audio source: </label><select id="audioSource1"></select>
+  </div>
+
+  <div class="select">
+    <label for="videoSource1">Video source: </label><select id="videoSource1"></select>
+  </div>
+
+  <video
+          class="video-elem"
+          id="video1"
+          autoplay muted playsinline></video>
+  </div>
+
+  <div class="eyeR">
+  <div class="select">
+    <label for="audioSource2">Audio source: </label><select id="audioSource2"></select>
+  </div>
+
+  <div class="select">
+    <label for="videoSource2">Video source: </label><select id="videoSource2"></select>
+  </div>
+
+  <video
+    class="video-elem"
+          id="video2"
+          autoplay muted playsinline></video>
+  </div>
+
+  <script async src="js/main.js"></script>
+
+
+</div>
+
+
+
+</body>
+</html>

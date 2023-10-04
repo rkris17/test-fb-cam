@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-
-
 <html lang="en">
 <head>
 
@@ -21,17 +18,11 @@
     <style>
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 100vh;
+            grid-template-columns: 1fr;
         }
 
         .video-elem {
             width: 100%;
-        }
-
-        .frame-elem {
-            width: 100%;
-            height: 100%;
         }
 
         h1 {
@@ -51,29 +42,19 @@
 
 <body>
 
-<div class="container">
-
-    <div class="eyeL">
-
-        <iframe
-                class="frame-elem"
-                src="camview.html"
-        >
-        </iframe>
-
-    </div>
-
-    <div class="eyeR">
-        <iframe
-                class="frame-elem"
-                src="camview.html"
-        >
-        </iframe>
-
-    </div>
-
-
+<div class="select">
+    <label for="audioSource1">Audio source: </label><select id="audioSource1"></select>
 </div>
+
+<div class="select">
+    <label for="videoSource1">Video source: </label><select id="videoSource1"></select>
+</div>
+
+<video
+        class="video-elem"
+        id="video1"
+        autoplay muted playsinline></video>
+
 
 
 </body>

@@ -76,4 +76,4 @@ const init = (suffix = '') => {
 }
 
 init('1');
-init('2');
+// init('2');
